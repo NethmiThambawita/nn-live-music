@@ -49,14 +49,26 @@ export default function Contact() {
               <Mail className="text-[var(--gold)] mt-1" size={20} />
               <div>
                 <p className="text-sm text-[var(--ink-dim)]">Email</p>
-                <p className="text-[var(--ink)]">bookings@nnlivemusic.lk</p>
+                <a
+                  href="mailto:kennathl@gmail.com"
+                  className="text-[var(--ink)] hover:text-[var(--gold-bright)] transition-colors"
+                >
+                  kennathl@gmail.com
+                </a>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <Phone className="text-[var(--gold)] mt-1" size={20} />
               <div>
                 <p className="text-sm text-[var(--ink-dim)]">Phone / WhatsApp</p>
-                <p className="text-[var(--ink)]">+94 7X XXX XXXX</p>
+                <a
+                  href="https://wa.me/94742303418"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[var(--ink)] hover:text-[var(--gold-bright)] transition-colors"
+                >
+                  +94 74 230 3418
+                </a>
               </div>
             </div>
             <div className="flex items-start gap-4">
