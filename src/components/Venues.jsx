@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { MapPin, Sun, Sparkles } from 'lucide-react';
+import FloatingNotes from './FloatingNotes';
 
 const VENUES = [
   {
@@ -16,7 +17,8 @@ const VENUES = [
 
 export default function Venues() {
   return (
-    <section id="venues" className="relative py-28 md:py-36 px-6 bg-[var(--stage-2)]">
+    <section id="venues" className="relative py-28 md:py-36 px-6 bg-[var(--stage-2)] overflow-hidden">
+      <FloatingNotes variant="sparse" />
       <div className="mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

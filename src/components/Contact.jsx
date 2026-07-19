@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, CheckCircle2 } from 'lucide-react';
+import FloatingNotes from './FloatingNotes';
 
 const INSTRUMENTS = ['Saxophone', 'Violin', 'Vocals & Guitar', 'Flute'];
 
@@ -18,7 +19,8 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative py-28 md:py-36 px-6 bg-[var(--stage-2)]">
+    <section id="contact" className="relative py-28 md:py-36 px-6 bg-[var(--stage-2)] overflow-hidden">
+      <FloatingNotes variant="sparse" />
       <div className="mx-auto max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

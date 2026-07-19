@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { PlayCircle, ImagePlus } from 'lucide-react';
 import { IconSaxophone, IconViolin, IconVocalsGuitar, IconFlute } from './InstrumentIcons';
+import FloatingNotes from './FloatingNotes';
 
 const TILES = [
   { icon: IconSaxophone, label: 'Sunset Sax Set', grad: 'from-[#5a3a1e] to-[#1a1206]' },
@@ -13,7 +14,8 @@ const TILES = [
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="relative py-28 md:py-36 px-6">
+    <section id="gallery" className="relative py-28 md:py-36 px-6 overflow-hidden">
+      <FloatingNotes variant="sparse" />
       <div className="mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { IconSaxophone, IconViolin, IconVocalsGuitar, IconFlute } from './InstrumentIcons';
+import FloatingNotes from './FloatingNotes';
 
 const ARTISTS = [
   {
@@ -35,7 +36,8 @@ const item = {
 
 export default function Artists() {
   return (
-    <section id="artists" className="relative py-28 md:py-36 px-6">
+    <section id="artists" className="relative py-28 md:py-36 px-6 overflow-hidden">
+      <FloatingNotes variant="sparse" />
       <div className="mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
