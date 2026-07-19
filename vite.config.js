@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/nn-live-music/',
+  // GitHub Pages serves this project from /nn-live-music/; Vercel serves it from the domain root.
+  base: process.env.GH_PAGES ? '/nn-live-music/' : '/',
   plugins: [react(), tailwindcss()],
 })
